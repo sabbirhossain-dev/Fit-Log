@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       <section className="border-t border-gray-700">
-        <div className="container flex justify-between items-center gap-10 py-10 ">
+        <div className="container flex flex-col md:flex-row justify-between items-center gap-2 md:gap-10 py-5 md:py-8 lg:py-10 ">
           <div className="flex justify-center items-center gap-1">
             <Image
               src={footerLogo}

@@ -23,7 +23,7 @@ export default function Home() {
             <p className="text-[16px] font-normal leading-7 text-[#9CA3AF]">
               FitLog is a dark, no-nonsense gym companion: pick a lift, lock it
               <br className="hidden md:block" />
-              into today's plan, and watch the week's work add up.
+              into today&apos;s plan, and watch the week&apos;s work add up.
             </p>
 
             {/* Browse Button */}
