@@ -15,9 +15,11 @@ const LibraryPart = async () => {
 
   return (
     <>
-      <div className="container text-white">
-        <h3>THE LIBRARY</h3>
-        <p>Twelve lifts covering every major muscle group.</p>
+      <div className="container text-white px-8 md:px-10 lg:px-0">
+        <h3 className="text-[#ffffff] text-[30px] font-bold">THE LIBRARY</h3>
+        <p className="text-[#9CA3AF] text-[14px] font-normal">
+          Twelve lifts covering every major muscle group.
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-10">
           {data.map((data) => (
             <LibraryCard key={data.id} data={data} />

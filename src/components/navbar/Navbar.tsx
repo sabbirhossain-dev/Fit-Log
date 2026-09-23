@@ -49,7 +49,7 @@ const Navbar = () => {
               </Link>
             </div>
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-5">
             <Link
               href="/my-plan"
               className="cursor-pointer text-[12px] font-medium text-[#9CA3AF]"
