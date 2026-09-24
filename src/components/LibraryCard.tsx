@@ -2,21 +2,23 @@
 
 import { IWorkout } from "@/types/type";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { FaRegStar } from "react-icons/fa6";
 import { IoMdTime } from "react-icons/io";
 import { RiBuilding3Line } from "react-icons/ri";
-import { toast } from "react-toastify";
+// import { toast } from "react-toastify";
 
 const LibraryCard = ({ data }: { data: IWorkout }) => {
-  const handleCardClick = () => {
-    toast.success(`${data.name} is added!`);
-  };
+  // const handleCardClick = () => {
+  //   toast.success(`${data.name} is added!`);
+  // };
 
   return (
-    <div
+    <Link
+      href={`/exercise/${data.id}`}
       className="flex flex-col gap-2 border border-gray-700 rounded-2xl bg-[#20242E] cursor-pointer hover:border-[#C2F800] hover:shadow-md transition-colors ease-in-out duration-400"
-      onClick={handleCardClick}
+      // onClick={handleCardClick}
     >
       <div>
         <Image
@@ -67,7 +69,7 @@ const LibraryCard = ({ data }: { data: IWorkout }) => {
           </p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
