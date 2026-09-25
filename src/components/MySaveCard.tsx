@@ -9,22 +9,22 @@ import { IoStarOutline } from "react-icons/io5";
 import { MdAccessTime } from "react-icons/md";
 import { RxCross2 } from "react-icons/rx";
 
-const MyPlanCard = ({ data }: { data: IWorkout }) => {
+const MySaveCard = ({ data }: { data: IWorkout }) => {
   const context = useContext(FitContext);
   if (!context) return null;
-  const { setPlanData, setPlanCount } = context;
+  const { setSaveData, setSaveCount } = context;
 
   const handleRemove = () => {
-    setPlanData((prev) => prev.filter((item) => item.id !== data.id));
+    setSaveData((prev) => prev.filter((item) => item.id !== data.id));
 
-    setPlanCount((prev) => Math.max(0, prev - 1));
+    setSaveCount((prev) => Math.max(0, prev - 1));
   };
 
   return (
     <div className="flex gap-2 w-full justify-between items-center rounded-xl border border-[#272C36] bg-[#15181F] p-4 transition-all duration-300 hover:border-[#363D49]">
-      <div className="flex gap-4 md:items-center flex-col md:flex-row">
+      <div className="flex flex-col md:flex-row gap-4 items-center justify-center">
         {/* Image */}
-        <div className="h-[80px] w-[144px] shrink-0 overflow-hidden rounded-lg bg-[#20242C] ">
+        <div className="h-[80px] w-[144px] overflow-hidden rounded-lg bg-[#20242C]">
           <Image
             src={data.image}
             alt={data.name}
@@ -82,12 +82,12 @@ const MyPlanCard = ({ data }: { data: IWorkout }) => {
           View Details
         </Link>
 
-        <button
+        {/* <button
           type="button"
           className="rounded-full bg-[#CCFF00] px-3.5 py-2.5 text-[12px] font-semibold leading-none text-black transition-all duration-200 hover:bg-[#D9FF4D] hover:shadow-[0_0_12px_rgba(204,255,0,0.15)] cursor-pointer"
         >
           ✓&nbsp; Mark as Done
-        </button>
+        </button> */}
 
         <button
           type="button"
@@ -102,4 +102,4 @@ const MyPlanCard = ({ data }: { data: IWorkout }) => {
   );
 };
 
-export default MyPlanCard;
+export default MySaveCard;
