@@ -3,15 +3,22 @@ import Image from "next/image";
 import React, { useContext } from "react";
 import saveLogo from "@/assets/save.png";
 import { FitContext } from "@/context/page";
+import { IWorkout } from "@/types/type";
 
-const SaveButton = () => {
+const SaveButton = ({ data }: { data: IWorkout }) => {
   const context = useContext(FitContext);
   if (!context) return null;
-  const { setSaveCount } = context;
+  const { setSaveCount, saveData, setSaveData } = context;
+
   const handleSaveButton = () => {
-    console.log("first");
+    const alreadyAdded = saveData.some((item) => item.id === data.id);
+
+    if (alreadyAdded) return;
+
+    setSaveData((prev) => [...prev, data]);
     setSaveCount((prev) => prev + 1);
   };
+
   return (
     <>
       <button

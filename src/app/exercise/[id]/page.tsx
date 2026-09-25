@@ -149,8 +149,8 @@ const CardId = async ({ params }: IPropsId) => {
 
             {/* BUTTONS */}
             <div className="mt-6 flex flex-wrap gap-3">
-              <AddButton />
-              <SaveButton />
+              <AddButton data={workout} />
+              <SaveButton data={workout} />
             </div>
           </div>
         </div>

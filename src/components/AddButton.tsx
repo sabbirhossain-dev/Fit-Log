@@ -1,15 +1,20 @@
 "use client";
 import { FitContext } from "@/context/page";
+import { IWorkout } from "@/types/type";
 import React, { useContext } from "react";
 import { MdAddCard } from "react-icons/md";
 
-const AddButton = () => {
+const AddButton = ({ data }: { data: IWorkout }) => {
   const context = useContext(FitContext);
   if (!context) return null;
-  const { setPlanCount } = context;
+  const { setPlanCount, setPlanData, planData } = context;
 
   const handleAddButton = () => {
-    console.log("button clicked");
+    const alreadyAdded = planData.some((item) => item.id === data.id);
+
+    if (alreadyAdded) return;
+
+    setPlanData((prev) => [...prev, data]);
     setPlanCount((prev) => prev + 1);
   };
 
