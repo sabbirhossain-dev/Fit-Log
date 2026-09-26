@@ -1,36 +1,114 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💪 FitLog — Workout Library
 
-## Getting Started
+FitLog is a modern and responsive workout management web application built with Next.js.
+It allows users to explore different exercises, view detailed workout information, save workouts for later, and create a daily workout plan.
 
-First, run the development server:
+The application is designed with a clean dark-themed gym interface to provide a simple and focused workout experience.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Live Demo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🔗 **Live Website:** https://fit-log-six-beta.vercel.app
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🔗 **GitHub Repository:** https://github.com/sabbirhossain-dev/Fit-Log.git
 
-## Learn More
+## 🛠️ Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+- **Next.js** — React framework and application routing
+- **React** — Building reusable UI components
+- **TypeScript** — Type-safe development
+- **Tailwind CSS** — Styling and responsive design
+- **DaisyUI** — UI components
+- **Context API** — Global state management
+- **React Icons** — Interface icons
+- **React Toastify** — Toast notifications
+- **Vercel** — Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✨ Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 1. 🏋️ Workout Library
 
-## Deploy on Vercel
+- Browse a collection of workouts from the FitLog API.
+- Each workout displays:
+  - Workout image
+  - Muscle groups
+  - Workout name
+  - Equipment
+  - Duration
+  - Calories
+  - Rating
+- Responsive 3-column grid on large screens.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 2. 📋 Today's Workout Plan
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Add workouts to your daily workout plan.
+- Today's Plan supports a maximum of **5 workouts**.
+- View all planned workouts from the My Plan page.
+- Remove workouts from the plan.
+- Mark completed workouts as **Done**.
+- Plan statistics update automatically.
+
+### 3. 💾 Save Workouts for Later
+
+- Save your favorite workouts for later.
+- View saved workouts from the **Saved** tab.
+- Remove saved workouts when they are no longer needed.
+- Saved workout count is displayed in the navbar.
+
+### 4. 🔎 Workout Details
+
+- View complete information about each workout.
+- Includes:
+  - Description
+  - Muscle groups
+  - Equipment
+  - Difficulty
+  - Sets & reps
+  - Duration
+  - Calories
+  - Rating
+  - Step-by-step instructions
+- Easily add a workout to today's plan or save it for later.
+
+### 5. 📊 My Plan & Workout Tracking
+
+- View your current workout plan in one place.
+- Track:
+  - Total exercises
+  - Total workout duration
+  - Total calories
+- Sort workouts by:
+  - Duration
+  - Calories
+  - Rating
+- Mark workouts as completed.
+
+### 6. 📱 Fully Responsive Design
+
+- Optimized for:
+  - 📱 Mobile
+  - 📲 Tablet
+  - 💻 Desktop
+- Responsive navbar, hero section, workout cards, details page, and My Plan page.
+
+### 7. 🔔 Toast Notifications
+
+- Users receive instant feedback when:
+  - A workout is added
+  - A workout is saved
+  - A duplicate workout is selected
+  - A workout is removed
+  - A workout is marked as completed
+
+### 8. ❌ Custom 404 & Loading States
+
+- Custom 404 page for invalid routes or workouts.
+- Loading state while workout data is being fetched.
+- User-friendly error handling for unavailable workout data.
+
+---
+
+By: Md Sabbir Hossain
+Phone: 01981441578
+Email: hossainsabbir309@gmail.com

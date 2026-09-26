@@ -11,6 +11,10 @@ const AddButton = ({ data }: { data: IWorkout }) => {
   const { setPlanCount, setPlanData, planData } = context;
 
   const handleAddButton = () => {
+    if (planData.length >= 5) {
+      toast.error("You can add maximum 5 workouts to today's plan!");
+      return;
+    }
     const alreadyAdded = planData.some((item) => item.id === data.id);
 
     if (alreadyAdded) {

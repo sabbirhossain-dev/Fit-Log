@@ -4,9 +4,9 @@ import { IWorkout } from "@/types/type";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { AiFillFire } from "react-icons/ai";
 import { FaRegStar } from "react-icons/fa6";
 import { IoMdTime } from "react-icons/io";
-import { RiBuilding3Line } from "react-icons/ri";
 // import { toast } from "react-toastify";
 
 const LibraryCard = ({ data }: { data: IWorkout }) => {
@@ -57,7 +57,7 @@ const LibraryCard = ({ data }: { data: IWorkout }) => {
           </p>
           <p className="text-[#9CA3AF] text-[12px] font-normal flex items-center gap-1">
             <span>
-              <RiBuilding3Line />
+              <AiFillFire />
             </span>
             {data.caloriesBurned} kcal
           </p>
