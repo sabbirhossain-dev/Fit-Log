@@ -4,6 +4,8 @@ import LibraryCard from "../LibraryCard";
 
 const apiData = async (): Promise<IWorkout[]> => {
   const res = await fetch("https://api.abcz.workers.dev/api/fitlog");
+  console.log("Status:", res.status);
+
   if (!res.ok) {
     throw new Error("Failed to fetch workout data");
   }

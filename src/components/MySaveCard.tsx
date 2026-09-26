@@ -22,9 +22,10 @@ const MySaveCard = ({ data }: { data: IWorkout }) => {
   };
 
   return (
-    <div className="flex gap-2 w-full justify-between items-center rounded-xl border border-[#272C36] bg-[#15181F] p-4 transition-all duration-300 hover:border-[#363D49]">
-      <div className="flex flex-col md:flex-row gap-4">
-        <div className="flex flex-col md:flex-row gap-4 justify-center">
+    <div className="flex gap-2 w-full items-center rounded-xl border border-[#272C36] bg-[#15181F] p-4 transition-all duration-300 hover:border-[#363D49]">
+      <div className="flex w-full flex-col justify-between gap-5 md:flex-row md:items-center">
+        {" "}
+        <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
           {/* Image */}
           <div className="h-[80px] w-[144px] overflow-hidden rounded-lg bg-[#20242C]">
             <Image
@@ -72,9 +73,7 @@ const MySaveCard = ({ data }: { data: IWorkout }) => {
             </div>
           </div>
         </div>
-
         {/* right part */}
-
         {/* Actions */}
         <div className="flex shrink-0 items-center gap-3">
           <Link

@@ -71,10 +71,10 @@ const MyPlan = () => {
             <button
               type="button"
               onClick={() => setTabs("plan")}
-              className={`cursor-pointer px-4 py-2 text-[13px] transition-all duration-300 ${
+              className={`cursor-pointer rounded-2xl border px-4 py-2 text-[13px] transition-all duration-300 ease-in-out ${
                 tabs === "plan"
-                  ? "rounded-2xl border border-gray-700 bg-[#1e2128] font-bold text-white"
-                  : "font-normal text-[#8A92A0] hover:text-white"
+                  ? "border-gray-700 bg-[#1e2128] font-bold text-white shadow-[0_2px_10px_rgba(0,0,0,0.15)]"
+                  : "border-transparent font-normal text-[#8A92A0] hover:bg-[#1b1f26] hover:text-white"
               }`}
             >
               Today&apos;s Plan
@@ -84,10 +84,10 @@ const MyPlan = () => {
             <button
               type="button"
               onClick={() => setTabs("saved")}
-              className={`cursor-pointer px-4 py-2 text-[13px] transition-all duration-300 ${
+              className={`cursor-pointer rounded-2xl border px-4 py-2 text-[13px] transition-all duration-300 ease-in-out ${
                 tabs === "saved"
-                  ? "rounded-2xl border border-gray-700 bg-[#1e2128] font-bold text-white"
-                  : "font-normal text-[#8A92A0] hover:text-white"
+                  ? "border-gray-700 bg-[#1e2128] font-bold text-white shadow-[0_2px_10px_rgba(0,0,0,0.15)]"
+                  : "border-transparent font-normal text-[#8A92A0] hover:bg-[#1b1f26] hover:text-white"
               }`}
             >
               Saved

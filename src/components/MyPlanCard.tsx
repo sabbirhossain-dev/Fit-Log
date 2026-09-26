@@ -42,7 +42,7 @@ const MyPlanCard = ({ data }: { data: IWorkout }) => {
       }`}
     >
       {/* Left Part */}
-      <div className="flex flex-col md:flex-row gap-4 justify-center">
+      <div className="flex flex-col md:flex-row gap-4 items-center justify-center">
         {/* Image */}
         <div className="h-[80px] w-[144px] overflow-hidden rounded-lg bg-[#20242C]">
           <Image
