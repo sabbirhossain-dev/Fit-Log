@@ -101,14 +101,10 @@ The application is designed with a clean dark-themed gym interface to provide a 
   - A workout is removed
   - A workout is marked as completed
 
-### 8. ❌ Custom 404 & Loading States
-
-- Custom 404 page for invalid routes or workouts.
-- Loading state while workout data is being fetched.
-- User-friendly error handling for unavailable workout data.
-
 ---
 
 By: Md Sabbir Hossain
+
 Phone: 01981441578
+
 Email: hossainsabbir309@gmail.com
