@@ -8,6 +8,7 @@ import { AiFillFire } from "react-icons/ai";
 import { IoStarOutline } from "react-icons/io5";
 import { MdAccessTime } from "react-icons/md";
 import { RxCross2 } from "react-icons/rx";
+import { toast } from "react-toastify";
 
 const MySaveCard = ({ data }: { data: IWorkout }) => {
   const context = useContext(FitContext);
@@ -16,7 +17,7 @@ const MySaveCard = ({ data }: { data: IWorkout }) => {
 
   const handleRemove = () => {
     setSaveData((prev) => prev.filter((item) => item.id !== data.id));
-
+    toast.info(`${data.name} is removed!`);
     setSaveCount((prev) => Math.max(0, prev - 1));
   };
 

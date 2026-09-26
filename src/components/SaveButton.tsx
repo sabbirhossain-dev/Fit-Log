@@ -4,6 +4,7 @@ import React, { useContext } from "react";
 import saveLogo from "@/assets/save.png";
 import { FitContext } from "@/context/page";
 import { IWorkout } from "@/types/type";
+import { toast } from "react-toastify";
 
 const SaveButton = ({ data }: { data: IWorkout }) => {
   const context = useContext(FitContext);
@@ -13,10 +14,14 @@ const SaveButton = ({ data }: { data: IWorkout }) => {
   const handleSaveButton = () => {
     const alreadyAdded = saveData.some((item) => item.id === data.id);
 
-    if (alreadyAdded) return;
+    if (alreadyAdded) {
+      toast.error(`${data.name} already saved!`);
+      return;
+    }
 
     setSaveData((prev) => [...prev, data]);
     setSaveCount((prev) => prev + 1);
+    toast.success(`${data.name} is added!`);
   };
 
   return (

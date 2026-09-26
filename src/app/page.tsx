@@ -28,7 +28,7 @@ export default function Home() {
 
             {/* Browse Button */}
             <Link
-              href="/"
+              href="#workouts"
               className="mt-2 inline-flex w-fit items-center bg-[#C2F800] px-5 py-3 text-[12px] font-bold text-black transition-all duration-300 hover:bg-[#d5ff33] hover:shadow-lg rounded-md"
             >
               BROWSE WORKOUTS

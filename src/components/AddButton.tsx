@@ -3,6 +3,7 @@ import { FitContext } from "@/context/page";
 import { IWorkout } from "@/types/type";
 import React, { useContext } from "react";
 import { MdAddCard } from "react-icons/md";
+import { toast } from "react-toastify";
 
 const AddButton = ({ data }: { data: IWorkout }) => {
   const context = useContext(FitContext);
@@ -12,10 +13,13 @@ const AddButton = ({ data }: { data: IWorkout }) => {
   const handleAddButton = () => {
     const alreadyAdded = planData.some((item) => item.id === data.id);
 
-    if (alreadyAdded) return;
-
+    if (alreadyAdded) {
+      toast.error(`${data.name} already in your cart!`);
+      return;
+    }
     setPlanData((prev) => [...prev, data]);
     setPlanCount((prev) => prev + 1);
+    toast.success(`${data.name} is added!`);
   };
 
   return (
