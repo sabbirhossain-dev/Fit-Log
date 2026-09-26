@@ -35,14 +35,14 @@ const MyPlanCard = ({ data }: { data: IWorkout }) => {
 
   return (
     <div
-      className={`flex w-full items-center flex-col md:flex-row justify-between gap-5 rounded-xl border p-4 transition-all duration-300 ${
+      className={`flex w-full md:items-center flex-col md:flex-row justify-between gap-5 rounded-xl border p-4 transition-all duration-300 ${
         isDone
           ? "border-[#687048] bg-[#171C16] shadow-[0_0_18px_rgba(204,255,0,0.06)]"
           : "border-[#272C36] bg-[#15181F] hover:border-[#363D49]"
       }`}
     >
       {/* Left Part */}
-      <div className="flex flex-col md:flex-row gap-4 items-center justify-center">
+      <div className="flex flex-col justify-start items-start md:flex-row gap-4 md:items-center md:justify-center">
         {/* Image */}
         <div className="h-[80px] w-[144px] overflow-hidden rounded-lg bg-[#20242C]">
           <Image

@@ -25,7 +25,7 @@ const MySaveCard = ({ data }: { data: IWorkout }) => {
     <div className="flex gap-2 w-full items-center rounded-xl border border-[#272C36] bg-[#15181F] p-4 transition-all duration-300 hover:border-[#363D49]">
       <div className="flex w-full flex-col justify-between gap-5 md:flex-row md:items-center">
         {" "}
-        <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col justify-start items-start md:flex-row gap-4 md:items-center md:justify-center">
           {/* Image */}
           <div className="h-[80px] w-[144px] overflow-hidden rounded-lg bg-[#20242C]">
             <Image

@@ -9,7 +9,8 @@ interface IPropsId {
 const CardId = async ({ params }: IPropsId) => {
   const { id } = await params;
 
-  const res = await fetch("https://api.abcz.workers.dev/api/fitlog");
+  // const res = await fetch("https://api.abcz.workers.dev/api/fitlog");
+  const res = await fetch("https://api.api-store.workers.dev/api/fitlog");
   const data: IWorkout[] = await res.json();
 
   const workout = data.find((item: IWorkout) => item.id === Number(id));

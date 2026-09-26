@@ -90,7 +90,7 @@ const Navbar = () => {
 
       {/* normal menu */}
       <div className="hidden md:block border-b border-gray-700 sticky top-0 z-10 bg-[#0C0D10]">
-        <div className="container mx-auto flex justify-between items-center py-8 ">
+        <div className="container mx-auto flex justify-between items-center py-8 px-5 md:px-6 lg:px-0">
           {/* logo part */}
           <div>
             <Link href="/" className="flex items-center gap-2">

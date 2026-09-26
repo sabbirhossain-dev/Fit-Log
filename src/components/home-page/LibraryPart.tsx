@@ -3,8 +3,8 @@ import React from "react";
 import LibraryCard from "../LibraryCard";
 
 const apiData = async (): Promise<IWorkout[]> => {
-  const res = await fetch("https://api.abcz.workers.dev/api/fitlog");
-  console.log("Status:", res.status);
+  // const res = await fetch("https://api.abcz.workers.dev/api/fitlog");
+  const res = await fetch("https://api.api-store.workers.dev/api/fitlog");
 
   if (!res.ok) {
     throw new Error("Failed to fetch workout data");
