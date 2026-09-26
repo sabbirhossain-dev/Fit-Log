@@ -7,7 +7,7 @@ import LibraryPart from "@/components/home-page/LibraryPart";
 export default function Home() {
   return (
     <>
-      <section className="my-10 md:my-16 px-8 md:px-10 lg:px-0">
+      <section className="my-10 md:my-16 px-5 md:px-6 lg:px-0">
         <div className="container my-10 flex justify-between gap-8 bg-[#222630] p-8 md:my-16 md:p-14 rounded-md">
           {/* Text Part */}
           <div className="flex w-full flex-col items-start gap-4 md:w-2/3">

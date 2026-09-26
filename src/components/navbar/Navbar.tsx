@@ -27,16 +27,16 @@ const Navbar = () => {
     <>
       {/* toggle menu */}
       <div className="sticky top-0 border-b border-gray-700 md:hidden">
-        <div className="flex justify-between items-center gap-5 bg-[#0C0D10] px-8 py-5 ">
+        <div className="flex justify-between items-center gap-5 bg-[#0C0D10] px-5 md:px-6 lg:px-0 py-5 ">
           <div className="flex gap-4 items-center">
             <button
-              className="border border-gray-200 p-2 rounded-md relative"
+              className="border border-gray-200 p-2 rounded-md relative cursor-pointer"
               onClick={handleToggle}
             >
               {toggleMenu ? (
-                <RxCross1 size={20} className="text-red-600" />
+                <RxCross1 size={20} className="text-red-600 cursor-pointer" />
               ) : (
-                <FaBars size={20} className="text-white" />
+                <FaBars size={20} className="text-white cursor-pointer" />
               )}
             </button>
 

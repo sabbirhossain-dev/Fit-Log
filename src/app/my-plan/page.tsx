@@ -50,7 +50,7 @@ const MyPlan = () => {
   };
 
   return (
-    <div className="container px-10 pt-10 md:px-8 lg:px-0">
+    <div className="container px-5 pt-10 md:px-6 lg:px-0">
       {/* Header */}
       <h3 className="text-[30px] font-bold text-white">MY PLAN</h3>
 
@@ -64,7 +64,7 @@ const MyPlan = () => {
 
       {/* Tabs + Sort */}
       <div className="mt-6">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
           {/* Tabs */}
           <div className="flex gap-1 rounded-2xl bg-[#151921] p-2 px-3">
             {/* Today's Plan */}

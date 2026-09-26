@@ -15,7 +15,7 @@ const LibraryPart = async () => {
 
   return (
     <>
-      <div id="workouts" className="container text-white px-8 md:px-10 lg:px-0">
+      <div id="workouts" className="container text-white px-5 md:px-6 lg:px-0">
         <h3 className="text-[#ffffff] text-[30px] font-bold">THE LIBRARY</h3>
         <p className="text-[#9CA3AF] text-[14px] font-normal">
           Twelve lifts covering every major muscle group.

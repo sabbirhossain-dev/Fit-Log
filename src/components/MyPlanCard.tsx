@@ -35,20 +35,16 @@ const MyPlanCard = ({ data }: { data: IWorkout }) => {
 
   return (
     <div
-      className={`flex w-full items-center justify-between gap-2 rounded-xl border p-4 transition-all duration-300 ${
+      className={`flex w-full items-center flex-col md:flex-row justify-between gap-5 rounded-xl border p-4 transition-all duration-300 ${
         isDone
           ? "border-[#687048] bg-[#171C16] shadow-[0_0_18px_rgba(204,255,0,0.06)]"
           : "border-[#272C36] bg-[#15181F] hover:border-[#363D49]"
       }`}
     >
       {/* Left Part */}
-      <div className="flex flex-col gap-4 md:flex-row md:items-center">
+      <div className="flex flex-col md:flex-row gap-4 justify-center">
         {/* Image */}
-        <div
-          className={`h-[80px] w-[144px] shrink-0 overflow-hidden rounded-lg bg-[#20242C] ${
-            isDone ? "opacity-80" : ""
-          }`}
-        >
+        <div className="h-[80px] w-[144px] overflow-hidden rounded-lg bg-[#20242C]">
           <Image
             src={data.image}
             alt={data.name}
@@ -60,37 +56,33 @@ const MyPlanCard = ({ data }: { data: IWorkout }) => {
         </div>
 
         {/* Workout Info */}
-        <div>
-          <h4
-            className={`text-[18px] font-bold uppercase leading-4 tracking-wide ${
-              isDone ? "text-[#CCFF00]" : "text-white"
-            }`}
-          >
+        <div className="">
+          <h4 className="text-[18px] font-bold uppercase leading-4 tracking-wide text-white">
             {data.name}
           </h4>
 
-          <p className="pt-2 pb-2.5 text-[12px] font-semibold leading-3 text-[#8A92A0]">
+          <p className=" text-[12px] leading-3 text-[#8A92A0] font-semibold pt-2 pb-2.5">
             {data.equipment}
           </p>
 
           {/* Meta */}
           <div className="mt-1.5 flex items-center gap-3 text-[12px] leading-3 text-[#A1A6B0]">
-            <span className="flex items-center gap-1 whitespace-nowrap">
-              <span className="text-[#CCFF00]">
+            <span className="flex items-center gap-1 whitespace-nowrap text-[12px]">
+              <span className=" text-[#CCFF00]">
                 <MdAccessTime />
               </span>
               {data.duration} min
             </span>
 
-            <span className="flex items-center gap-1 whitespace-nowrap">
-              <span className="text-[#CCFF00]">
+            <span className="flex items-center gap-1 whitespace-nowrap text-[12px]">
+              <span className=" text-[#CCFF00]">
                 <AiFillFire />
               </span>
               {data.caloriesBurned} kcal
             </span>
 
-            <span className="flex items-center gap-1 whitespace-nowrap">
-              <span className="text-[#CCFF00]">
+            <span className="flex items-center gap-1 whitespace-nowrap text-[12px]">
+              <span className=" text-[#CCFF00]">
                 <IoStarOutline />
               </span>
               {data.rating}

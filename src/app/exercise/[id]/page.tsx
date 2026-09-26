@@ -19,7 +19,7 @@ const CardId = async ({ params }: IPropsId) => {
   }
 
   return (
-    <main className="min-h-screen bg-[#0D0F14] px-4 py-8 text-white md:px-6 lg:px-10">
+    <main className="min-h-screen bg-[#0D0F14] px-5 py-8 text-white md:px-6 lg:px-10">
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-8 lg:grid-cols-[1fr_1fr]">
           {/* LEFT - IMAGE */}
